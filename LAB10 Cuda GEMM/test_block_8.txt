@@ -1,0 +1,97 @@
+Device 0: NVIDIA GeForce RTX 4070
+  Total number of SMs:                         46
+  Maximum number of threads per SM:            1536
+  Maximum number of threads per block:         1024
+  Maximum size of each dimension of a block:   1024 x 1024 x 64
+  Maximum size of each dimension of a grid:    2147483647 x 65535 x 65535
+  Shared memory per block:                     49152 bytes
+  Total global memory:                         11.9937 GB
+  Number of registers per SM:                  65536
+  Number of registers per block:               65536
+  Maximum registers per thread:                64
+####################################################################
+Running tests for GEMM
+Matrix dims MxNxK: 128 x 128 x 128
+Block dims:        8 x 8
+--------------------------------------------------------------------
+Algorithm	            Time	        TFLOPS	                P RATIO	
+CUBLAS                0.000125          0.033501            100.00%
+naiveGEMM             0.000009          0.481351           1436.84%
+blockGEMM_sn8         0.000016          0.256991            767.12%
+blockGEMM_sn16        0.000016          0.269109            803.29%
+vec_GEMM_sn8          0.000014          0.290532            867.24%
+vec_GEMM_sn16         0.000013          0.332987            993.97%
+conflictFreeGEMM_sn8  0.000015          0.286816            856.15%
+conflictFreeGEMM_sn16 0.000013          0.326204            973.72%
+doubleBufferGEMM_sn8  0.000009          0.456681           1363.20%
+doubleBufferGEMM_sn16 0.000012          0.351296           1048.62%
+--------------------------------------------------------------------
+####################################################################
+Running tests for GEMM
+Matrix dims MxNxK: 256 x 256 x 256
+Block dims:        8 x 8
+--------------------------------------------------------------------
+Algorithm	            Time	        TFLOPS	                P RATIO	
+CUBLAS                0.000008          4.337260            100.00%
+naiveGEMM             0.000030          1.117879             25.77%
+blockGEMM_sn8         0.000031          1.070221             24.68%
+blockGEMM_sn16        0.000030          1.108097             25.55%
+vec_GEMM_sn8          0.000021          1.566535             36.12%
+vec_GEMM_sn16         0.000020          1.654114             38.14%
+conflictFreeGEMM_sn8  0.000020          1.679455             38.72%
+conflictFreeGEMM_sn16 0.000017          1.942491             44.79%
+doubleBufferGEMM_sn8  0.000013          2.624031             60.50%
+doubleBufferGEMM_sn16 0.000016          2.097068             48.35%
+--------------------------------------------------------------------
+####################################################################
+Running tests for GEMM
+Matrix dims MxNxK: 512 x 512 x 512
+Block dims:        8 x 8
+--------------------------------------------------------------------
+Algorithm	            Time	        TFLOPS	                P RATIO	
+CUBLAS                0.000028          9.611531            100.00%
+naiveGEMM             0.000187          1.436403             14.94%
+blockGEMM_sn8         0.000071          3.770602             39.23%
+blockGEMM_sn16        0.000071          3.768882             39.21%
+vec_GEMM_sn8          0.000044          6.057216             63.02%
+vec_GEMM_sn16         0.000045          6.003441             62.46%
+conflictFreeGEMM_sn8  0.000038          7.005276             72.88%
+conflictFreeGEMM_sn16 0.000037          7.253005             75.46%
+doubleBufferGEMM_sn8  0.000029          9.237029             96.10%
+doubleBufferGEMM_sn16 0.000037          7.229845             75.22%
+--------------------------------------------------------------------
+####################################################################
+Running tests for GEMM
+Matrix dims MxNxK: 1024 x 1024 x 1024
+Block dims:        8 x 8
+--------------------------------------------------------------------
+Algorithm	            Time	        TFLOPS	                P RATIO	
+CUBLAS                0.000143          14.970034           100.00%
+naiveGEMM             0.001411          1.522147             10.17%
+blockGEMM_sn8         0.000401          5.360565             35.81%
+blockGEMM_sn16        0.000400          5.368544             35.86%
+vec_GEMM_sn8          0.000202          10.647249            71.12%
+vec_GEMM_sn16         0.000226          9.502503             63.48%
+conflictFreeGEMM_sn8  0.000157          13.674686            91.35%
+conflictFreeGEMM_sn16 0.000171          12.592068            84.12%
+doubleBufferGEMM_sn8  0.000145          14.773098            98.68%
+doubleBufferGEMM_sn16 0.000205          10.485686            70.04%
+--------------------------------------------------------------------
+####################################################################
+Running tests for GEMM
+Matrix dims MxNxK: 2048 x 2048 x 2048
+Block dims:        8 x 8
+--------------------------------------------------------------------
+Algorithm	            Time	        TFLOPS	                P RATIO	
+CUBLAS                0.001060          16.214812           100.00%
+naiveGEMM             0.012010          1.430447              8.82%
+blockGEMM_sn8         0.003149          5.455887             33.65%
+blockGEMM_sn16        0.003113          5.518230             34.03%
+vec_GEMM_sn8          0.001538          11.170883            68.89%
+vec_GEMM_sn16         0.001702          10.094356            62.25%
+conflictFreeGEMM_sn8  0.001173          14.648097            90.34%
+conflictFreeGEMM_sn16 0.001302          13.194517            81.37%
+doubleBufferGEMM_sn8  0.001130          15.203838            93.77%
+doubleBufferGEMM_sn16 0.001314          13.073310            80.63%
+--------------------------------------------------------------------
+####################################################################

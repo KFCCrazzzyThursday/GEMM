@@ -1,0 +1,48 @@
+对于参数m,n,k: 512 512 512
+    运行 #1
+time_taken: 0.544685
+    运行 #2
+time_taken: 0.55709
+    运行 #3
+time_taken: 0.545821
+    运行 #4
+time_taken: 0.551545
+    运行 #5
+time_taken: 0.546392
+    平均运行时间: .54 秒
+对于参数m,n,k: 1024 1024 1024
+    运行 #1
+time_taken: 4.38328
+    运行 #2
+time_taken: 4.42858
+    运行 #3
+time_taken: 4.37293
+    运行 #4
+time_taken: 4.46709
+    运行 #5
+time_taken: 4.39506
+    平均运行时间: 4.40 秒
+对于参数m,n,k: 1536 1536 1536
+    运行 #1
+time_taken: 14.8602
+    运行 #2
+time_taken: 14.9352
+    运行 #3
+time_taken: 14.9529
+    运行 #4
+time_taken: 14.9609
+    运行 #5
+time_taken: 14.8913
+    平均运行时间: 14.92 秒
+对于参数m,n,k: 2048 2048 2048
+    运行 #1
+time_taken: 35.4206
+    运行 #2
+time_taken: 35.3607
+    运行 #3
+time_taken: 35.2938
+    运行 #4
+time_taken: 35.308
+    运行 #5
+time_taken: 35.5388
+    平均运行时间: 35.38 秒
