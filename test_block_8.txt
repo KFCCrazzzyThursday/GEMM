@@ -1,11 +1,11 @@
-Device 0: NVIDIA GeForce RTX 4070
-  Total number of SMs:                         46
-  Maximum number of threads per SM:            1536
+Device 0: NVIDIA A100-SXM4-40GB
+  Total number of SMs:                         108
+  Maximum number of threads per SM:            2048
   Maximum number of threads per block:         1024
   Maximum size of each dimension of a block:   1024 x 1024 x 64
   Maximum size of each dimension of a grid:    2147483647 x 65535 x 65535
   Shared memory per block:                     49152 bytes
-  Total global memory:                         11.9937 GB
+  Total global memory:                         39.4945 GB
   Number of registers per SM:                  65536
   Number of registers per block:               65536
   Maximum registers per thread:                64
@@ -22,16 +22,16 @@ Running tests for GEMM
 Matrix dims MxNxK: 4096 x 4096 x 4096
 Block dims:        8 x 8
 --------------------------------------------------------------------
-Algorithm	            Time	        TFLOPS	                P RATIO	
-CUBLAS_TC_TF32        0.004421          31.086871           100.00%
-CUBLAS_SGEMM          0.006413          21.430931            68.94%
-blockGEMM_sn8         0.021782          6.309697             20.30%
-blockGEMM_sn16        0.027898          4.926471             15.85%
-vec_GEMM_sn8          0.011649          11.798142            37.95%
-vec_GEMM_sn16         0.013112          10.481789            33.72%
-conflictFreeGEMM_sn8  0.009850          13.953106            44.88%
-conflictFreeGEMM_sn16 0.010854          12.662451            40.73%
-doubleBufferGEMM_sn8  0.010479          13.115685            42.19%
-doubleBufferGEMM_sn16 0.010846          12.672283            40.76%
+Algorithm                   Time                TFLOPS                  P RATIO
+CUBLAS_TC_TF32        0.001082          127.053198          100.00%
+CUBLAS_SGEMM          0.007221          19.033495            14.98%
+blockGEMM_sn8         0.018448          7.450102              5.86%
+blockGEMM_sn16        0.023359          5.883889              4.63%
+vec_GEMM_sn8          0.009387          14.640971            11.52%
+vec_GEMM_sn16         0.010431          13.176460            10.37%
+conflictFreeGEMM_sn8  0.008327          16.504561            12.99%
+conflictFreeGEMM_sn16 0.008556          16.062679            12.64%
+doubleBufferGEMM_sn8  0.007826          17.561502            13.82%
+doubleBufferGEMM_sn16 0.008828          15.568560            12.25%
 --------------------------------------------------------------------
 ####################################################################
